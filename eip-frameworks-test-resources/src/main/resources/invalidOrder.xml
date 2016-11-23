@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order xmlns="http://www.j-labs.pl/blog/order" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.j-labs.pl/blog/order order.xsd" identifier="123">
+  <items>
+    <item identifier="1">
+      <name>Sony Bravia</name>
+      <description>TV set</description>
+      <count>1</count>
+    </item>
+    <item identifier="2">
+      <name>HTC 10</name>
+      <description>smartphone</description>
+      <count>1</count>
+    </item>
+  </items>
+</order>

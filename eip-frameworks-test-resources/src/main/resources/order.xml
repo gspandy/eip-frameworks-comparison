@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order xmlns="http://www.j-labs.pl/blog/order" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.j-labs.pl/blog/order order.xsd" identifier="375153">
+  <date>2016-10-28</date>
+  <client identifier="44">
+    <name>Paweł</name>
+    <surname>Weselak</surname>
+    <address>Szlak 77, Kraków</address>
+    <email>pawel.weselak@j-labs.pl</email>
+    <phone>512262144</phone>
+  </client>
+  <items>
+    <item identifier="1">
+      <name>Sony Bravia</name>
+      <description>TV set</description>
+      <count>1</count>
+    </item>
+    <item identifier="2">
+      <name>HTC 10</name>
+      <description>smartphone</description>
+      <count>1</count>
+    </item>
+  </items>
+</order>
