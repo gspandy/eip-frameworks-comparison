@@ -6,4 +6,32 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>eip-frameworks-apache-camel</artifactId>
+  
+  <properties>
+    <apache.camel.version>2.18.0</apache.camel.version>
+    <slf4j.version>1.7.21</slf4j.version>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+      <groupId>pl.j-labs.blog</groupId>
+      <artifactId>eip-frameworks-resources</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel</groupId>
+      <artifactId>camel-netty4-http</artifactId>
+      <version>${apache.camel.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel</groupId>
+      <artifactId>camel-mail</artifactId>
+      <version>${apache.camel.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-jdk14</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+  </dependencies>
+  
 </project>

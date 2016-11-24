@@ -11,19 +11,13 @@
   <properties>
     <spring.integration.version>4.3.5.RELEASE</spring.integration.version>
     <spring.integration.java.dsl.version>1.2.1.RELEASE</spring.integration.java.dsl.version>
+    <javax.mail.version>1.4.7</javax.mail.version>
   </properties>
   
   <dependencies>
     <dependency>
       <groupId>pl.j-labs.blog</groupId>
       <artifactId>eip-frameworks-resources</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>pl.j-labs.blog</groupId>
-      <artifactId>eip-frameworks-test-resources</artifactId>
-      <version>${project.version}</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.springframework.integration</groupId>
@@ -53,7 +47,7 @@
     <dependency>
       <groupId>javax.mail</groupId>
       <artifactId>mail</artifactId>
-      <version>1.4.7</version>
+      <version>${javax.mail.version}</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>

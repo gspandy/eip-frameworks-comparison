@@ -43,9 +43,9 @@ public class OrderConfirmationFlowConfiguration {
                                 .requestMapping(r -> r.methods(HttpMethod.POST)))
                 .filter(xmlValidatingMessageSelector(), e -> e.discardFlow(
                                 f -> f.handle(Files.outboundAdapter(new File("rejected")))))
-                .enrichHeaders(h -> h.header(MailHeaders.TO, fromMailHeaderValueMessageProcessor())
-                                .header(MailHeaders.SUBJECT, subjectMailHeaderValueMessageProcessor())
-                                .header(MailHeaders.FROM, "Store admin <admin@weselak.vipserv.org>")
+                .enrichHeaders(h -> h.header(MailHeaders.SUBJECT, subjectMailHeaderValueMessageProcessor())
+                                .header(MailHeaders.TO, fromMailHeaderValueMessageProcessor())
+                                .header(MailHeaders.FROM, "Store admin <admin@store.com>")
                                 .header(MailHeaders.CONTENT_TYPE, "text/html; charset=UTF-8"))
                 .transform(Transformers.xslt(orderXslt))
                 .handle(Mail.outboundAdapter("localhost")

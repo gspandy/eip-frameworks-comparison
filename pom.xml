@@ -20,6 +20,17 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
+        <groupId>pl.j-labs.blog</groupId>
+        <artifactId>eip-frameworks-resources</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>pl.j-labs.blog</groupId>
+        <artifactId>eip-frameworks-test-resources</artifactId>
+        <version>${project.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${junit.version}</version>
